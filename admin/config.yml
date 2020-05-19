@@ -47,14 +47,14 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - label: "Columns"
         name: "columns"
-        minimize_collapsed: false
+        collapsed: false
         widget: "list"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: string }
           - label: "Organizations"
             name: "organizations"
-            minimize_collapsed: false
+            collapsed: false
             widget: "list"
             fields:
               - {label: "Organization Image", name: "organization-image", widget: "image", required: false}
