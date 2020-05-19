@@ -59,8 +59,8 @@ collections: # A list of collections the CMS should be able to edit
             summary: "{{fields.organization_title}}"
             identifier_field: "name"
             fields:
-              - {label: "Organization Image", name: "organization_image", widget: "image", required: false}
               - {label: Organization Title, name: organization_title, widget: string}
               - {label: Organization Subtitle, name: organization_subtitle, widget: string, default: "A note from Evan"}
               - {label: Organization Description, name: organization_description, widget: markdown, required: false}
+              - {label: "Organization Image", name: "organization_image", widget: "image", required: false}
               - {label: Organization Link, name: organization_link, widget: string}
