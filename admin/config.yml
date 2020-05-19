@@ -57,8 +57,8 @@ collections: # A list of collections the CMS should be able to edit
             collapsed: false
             widget: "list"
             fields:
-              - {label: "Organization Image", name: "organization-image", widget: "image", required: false}
-              - {label: Organization Title, name: organization-title, widget: string}
-              - {label: Organization Subtitle, name: organization-subtitle, widget: string, default: "A note from Evan"}
-              - {label: Organization Description, name: organization-description, widget: markdown}
-              - {label: Organization Link, name: organization-link, widget: string}
+              - {label: "Organization Image", name: "organization_image", widget: "image", required: false}
+              - {label: Organization Title, name: organization_title, widget: string}
+              - {label: Organization Subtitle, name: organization_subtitle, widget: string, default: "A note from Evan"}
+              - {label: Organization Description, name: organization_description, widget: markdown, required: false}
+              - {label: Organization Link, name: organization_link, widget: string}
