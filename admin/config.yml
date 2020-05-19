@@ -54,8 +54,9 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Description, name: description, widget: markdown }
           - label: "Organizations"
             name: "organizations"
-            collapsed: false
+            collapsed: true
             widget: "list"
+            summary: "{{fields.organization_title}}"
             fields:
               - {label: "Organization Image", name: "organization_image", widget: "image", required: false}
               - {label: Organization Title, name: organization_title, widget: string}
