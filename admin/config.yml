@@ -57,6 +57,7 @@ collections: # A list of collections the CMS should be able to edit
             collapsed: true
             widget: "list"
             summary: "{{fields.organization_title}}"
+            identifier_field: "name"
             fields:
               - {label: "Organization Image", name: "organization_image", widget: "image", required: false}
               - {label: Organization Title, name: organization_title, widget: string}
