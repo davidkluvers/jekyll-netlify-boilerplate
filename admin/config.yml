@@ -47,3 +47,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Image", name: "image", widget: "image", required: false}
+      - {label: "Testimonials", name: "testimonials", minimize_collapsed: false, widget: "list", fields:
+          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+          - {label: Author, name: author, widget: string }}
