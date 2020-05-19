@@ -45,12 +45,20 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Permalink", name: "permalink", widget: "hidden"}
       - {label: "Section", name: "section", widget: "hidden", default: "{{name}}"}
       - {label: "Intro Paragraph", name: "intro_paragraph", widget: "markdown", required: false}
-      - {label: "Body", name: "body", widget: "markdown", required: false}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - label: "Testimonials"
-        name: "testimonials"
+      - label: "Columns"
+        name: "columns"
         minimize_collapsed: false
         widget: "list"
         fields:
-          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
-          - {label: Author, name: author, widget: string }
+          - {label: Title, name: title, widget: string, default: "..."}
+          - {label: Description, name: description, widget: string }
+          - label: "Organizations"
+            name: "organizations"
+            minimize_collapsed: false
+            widget: "list"
+            fields:
+              - {label: "Organization Image", name: "organization-image", widget: "image", required: false}
+              - {label: Organization Title, name: organization-title, widget: string}
+              - {label: Organization Subtitle, name: organization-subtitle, widget: string, default: "A note from Evan"}
+              - {label: Organization Description, name: organization-description, widget: string}
+              - {label: Organization Link, name: organization-link, widget: string}
