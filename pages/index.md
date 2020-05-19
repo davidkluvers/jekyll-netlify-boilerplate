@@ -3,7 +3,7 @@ layout: home
 title: Spiegel Family Fund
 permalink: /
 section: home
-intro_paragraph: We support organizations that contribute to human progress.
+intro_paragraph: We support organizations that contribute to human progress. change
 image: /assets/img/uploads/screenshot-editor.jpg
 columns:
   - title: Arts
